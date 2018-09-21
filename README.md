@@ -11,7 +11,7 @@
 
 3. Once you've downloaded the NOOBS zip file, you'll need to copy the contents to the formatted SD card on your computer.
 
-4. To set up a blank SD card with NOOBS:
+4. To set up a blank Micro SD card with NOOBS:
 
   * Format an SD card which is 8GB or larger as FAT. See the instructions given below.
   Note: If you're formatting an SD (or micro SD) card that has a capacity over 32GB (i.e. 64GB and above), then see the separate SDXC formatting instructions.
@@ -34,7 +34,8 @@
   * You can find further instructions for this step at [NOOBS](https://www.raspberrypi.org/documentation/installation/noobs.md) website.
 
 5. Setup your Raspberry Pi 2
-  * Insert the micro SD in the board
+
+  * Insert the micro SD into the board
     * ![connecting_microsd](./READMEImages/connecting_microsd.png)
   * Connect a keyboard, mouse, ethernet cable and  A/C power supply
     * ![connecting_others](./READMEImages/connecting_others1.png)
@@ -52,7 +53,7 @@
 6. Check Raspberry Pi 2 internet connection and install required packages
   * To check your internet connection open the `Terminal` application (left upper corner) and enter the command `ping 8.8.8.8`. You should see the following result:
   * ![checking_internet_connection](./READMEImages/checking_internet_connection.png)  
-  * After that type the following commands one at a time:
+  * After that, type the following commands in the terminal one at a time:
     * `sudo apt-get update`
     * `sudo apt-get install oracle-java8-jdk`
     * `sudo apt-get install at`
@@ -60,8 +61,12 @@
 
 7. Setup `SCALP` files
   * `cd /home/pi`
-  * `git clone https://github.com/PiETLab/SCALP`
-  * `mv SCALP/* .`
-    * Moving files from the `SCALP` folder to `/home/pi`
+  * `git clone https://github.com/PiETLab/SCALPScripts`
+  * `mv SCALPScripts/* .`
+    * Moving files from the `SCALPScripts` folder to `/home/pi`
   * `mv enamel.desktop .config/autostart/`
   * `sudo mv enamel_usb_autostart.rules /etc/udev/rules.d/`
+  * `git clone https://github.com/PiETLab/Treasure-Box-Braille-Apps`
+  * `mv Treasure-Box-Braille-Apps/Enamel Enamel`
+  * `cd Enamel`
+  * `mkdir USBBuffer && cd ..`
