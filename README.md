@@ -62,10 +62,10 @@
 7. Setup `SCALP` files
   * `cd /home/pi`
   * `git clone https://github.com/PiETLab/SCALPScripts`
-  * `mv SCALPScripts/* .`
+  * `mv SCALPScripts/SCALP.sh SCALPScripts/startSCALP.sh SCALPScripts/unmountDrive.sh SCALPScripts/changeconfig.sh SCALPScripts/config.txt .`
     * Moving files from the `SCALPScripts` folder to `/home/pi`
-  * `mv enamel.desktop .config/autostart/`
-  * `sudo mv enamel_usb_autostart.rules /etc/udev/rules.d/`
+  * `mv SCALPScripts/enamel.desktop .config/autostart/`
+  * `sudo mv SCALPScripts/enamel_usb_autostart.rules /etc/udev/rules.d/`
   * `git clone https://github.com/PiETLab/Treasure-Box-Braille-Apps`
   * `mv Treasure-Box-Braille-Apps/Enamel Enamel`
   * `cd Enamel`
