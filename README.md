@@ -56,10 +56,11 @@
   * After that, type the following commands in the terminal one at a time:
     * `sudo apt-get update`
     * `sudo apt-get install oracle-java8-jdk`
+    * `sudo update-alternatives --config java`
     * `sudo apt-get install at`
       * If it asks for permission, type `Y` for `Yes`
 
-7. Setup `SCALP` files 
+7. Setup `SCALP` files
   * `cd /home/pi`
   * `git clone https://github.com/PiETLab/SCALPScripts`
   * `mv SCALPScripts/SCALP.sh SCALPScripts/startSCALP.sh SCALPScripts/unmountDrive.sh SCALPScripts/changeconfig.sh SCALPScripts/config.txt .`
@@ -68,5 +69,7 @@
   * `sudo mv SCALPScripts/enamel_usb_autostart.rules /etc/udev/rules.d/`
   * `git clone https://github.com/PiETLab/Treasure-Box-Braille-Apps`
   * `mv Treasure-Box-Braille-Apps/Enamel Enamel`
-  * `cd Enamel`
-  * `mkdir USBBuffer && cd ..`
+  * `cd Enamel & mkdir USBBuffer`
+  * `java -Dpi4j.linking=dynamic -jar Enamel.jar START_FACTORY FactoryScenarios/`
+    * The `-Dpi4j.linking=dynamic` is being used because the pi4j in use is deprecated
+      * Readme more about it [here](https://www.raspberrypi.org/forums/viewtopic.php?t=182191)
