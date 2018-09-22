@@ -59,7 +59,7 @@
     * `sudo apt-get install at`
       * If it asks for permission, type `Y` for `Yes`
 
-7. Setup `SCALP` files
+7. Setup `SCALP` files 
   * `cd /home/pi`
   * `git clone https://github.com/PiETLab/SCALPScripts`
   * `mv SCALPScripts/SCALP.sh SCALPScripts/startSCALP.sh SCALPScripts/unmountDrive.sh SCALPScripts/changeconfig.sh SCALPScripts/config.txt .`
