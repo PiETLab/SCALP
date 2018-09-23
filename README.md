@@ -74,9 +74,9 @@
     * The `-Dpi4j.linking=dynamic` is being used because the pi4j in use is deprecated
       * Readme more about it [here](https://www.raspberrypi.org/forums/viewtopic.php?t=182191)
 
-## Documentation
+## Documentation - SCALP Program Functions
 
-### Introduction:
+### Starting SCALP
 
   * **The Select-(as per)-Config-and-Launch-Player (SCALP)** application is a suite of files that work together to create a cohesive function. It allows the user to select a scenario file for the program to play, as well as change the settings of SCALP, using buttons or keyboard keys.
 
@@ -97,19 +97,18 @@
     * Enables the user to interact with the SCALP program, giving audio feedback and allowing the user to provide input using hardware buttons (connected by Raspberry Pi’s GPIO pins), or through keyboard keys if the current system the program is being run on is not a Raspberry Pi. Enamel.jar also includes an option within to change the variables in the config.txt file by using changeconfig.sh.
 
 
-### SCALP Program Functions
+### Starting SCALP
 
-  * **Starting SCALP**
-	 * The SCALP Java program is started in two ways:
-		* **On device boot**
-		* **On insertion of USB flash drive**.
+  * The SCALP Java program is started in two ways:
+    * **On device boot**
+	  * **On insertion of USB flash drive**.
     If an instance of SCALP is already running, another start of SCALP will shut down the previous instance. For example, if you were in the middle of a scenario and you decide you want to play another file stored on a flash drive, simply inserting that flash drive will restart SCALP automatically, allowing you to select the scenario file in the flash drive.
 
     * **Note that a blank Java program will open, a window with no components inside**. This is normal; this is to allow the program to listen to keyboard key presses. As such, the **Java window must be in focus for the keyboard keys to work**. This is done by default, but if you switch focus to another window, just note that it will not work.
 
-    * **Entering Input**
-      * If you are using SCALP on the ENAMEL device, the program will recognize it and allow you to use the physical buttons on your device. Otherwise, the keyboard row’s keys can be used instead, which again will need the blank Java program window open and in focus. The program speaks out loud the instructions. Depending on the current menu, the buttons will behave differently.
+### Entering Input
 
+  * If you are using SCALP on the ENAMEL device, the program will recognize it and allow you to use the physical buttons on your device. Otherwise, the keyboard row’s keys can be used instead, which again will need the blank Java program window open and in focus. The program speaks out loud the instructions. Depending on the current menu, the buttons will behave differently.
 
 ###  The different modes of SCALP
 
