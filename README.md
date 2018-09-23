@@ -73,6 +73,8 @@
   * `java -Dpi4j.linking=dynamic -jar Enamel.jar START_FACTORY FactoryScenarios/`
     * The `-Dpi4j.linking=dynamic` is being used because the pi4j in use is deprecated
       * Readme more about it [here](https://www.raspberrypi.org/forums/viewtopic.php?t=182191)
+    * Remember to connect the necessary hardware to supply input to the program
+        * More information [here](https://github.com/PiETLab/EnamelOpenSCADModels)
 
 ## Documentation - SCALP Program Functions
 
