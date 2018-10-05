@@ -55,6 +55,8 @@
   * ![checking_internet_connection](./READMEImages/checking_internet_connection.png)  
   * After that, type the following commands in the terminal one at a time:
     * `sudo apt-get update`
+    * `sudo apt-get install wget`
+    * `sudo apt-get install unzip`
     * `sudo apt-get install oracle-java8-jdk`
     * `sudo update-alternatives --config java`
     * `sudo apt-get install at`
@@ -67,14 +69,13 @@
     * Moving files from the `SCALPScripts` folder to `/home/pi`
   * `mv SCALPScripts/enamel.desktop .config/autostart/`
   * `sudo mv SCALPScripts/enamel_usb_autostart.rules /etc/udev/rules.d/`
-  * `git clone https://github.com/PiETLab/Treasure-Box-Braille-Apps`
-  * `mv Treasure-Box-Braille-Apps/Enamel Enamel`
-  * `cd Enamel && mkdir USBBuffer`
+  * `wget https://github.com/PiETLab/TreasureBoxBrailleApps/releases/download/Release-2018-10-05-10-13-51/SCALP.zip`
+    * Check the [releases page](`https://github.com/PiETLab/TreasureBoxBrailleApps/releases/latest`) for the latest release available
+  * `unzip SCALP.zip`
+  * `cd Enamel`
   * `java -Dpi4j.linking=dynamic -jar Enamel.jar START_FACTORY FactoryScenarios/`
     * The `-Dpi4j.linking=dynamic` is necessary because the pi4j version in use is deprecated
-      * Readme more about it [here](https://www.raspberrypi.org/forums/viewtopic.php?t=182191)
-    * Remember to connect the necessary hardware to supply input to the program
-        * More information [here](https://github.com/PiETLab/EnamelOpenSCADModels)
+      * Read more about it [here](https://www.raspberrypi.org/forums/viewtopic.php?t=182191)
 
 ## Documentation - SCALP Program Functions
 
