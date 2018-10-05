@@ -74,7 +74,7 @@
   * `unzip SCALP.zip`
   * `cd Enamel`
   * `java -Dpi4j.linking=dynamic -jar Enamel.jar START_FACTORY FactoryScenarios/`
-    * The `-Dpi4j.linking=dynamic` is necessary because the pi4j version in use is deprecated
+    * The `-Dpi4j.linking=dynamic` flag is necessary because the pi4j version in use is deprecated
       * Read more about it [here](https://www.raspberrypi.org/forums/viewtopic.php?t=182191)
 
 ## Documentation - SCALP Program Functions
