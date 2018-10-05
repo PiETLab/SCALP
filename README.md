@@ -70,7 +70,7 @@
   * `mv SCALPScripts/enamel.desktop .config/autostart/`
   * `sudo mv SCALPScripts/enamel_usb_autostart.rules /etc/udev/rules.d/`
   * `wget https://github.com/PiETLab/TreasureBoxBrailleApps/releases/download/Release-2018-10-05-10-13-51/SCALP.zip`
-    * Check the [releases page](`https://github.com/PiETLab/TreasureBoxBrailleApps/releases/latest`) for the latest release available
+    * Check the [releases page](https://github.com/PiETLab/TreasureBoxBrailleApps/releases/latest) for the latest release available
   * `unzip SCALP.zip`
   * `cd Enamel`
   * `java -Dpi4j.linking=dynamic -jar Enamel.jar START_FACTORY FactoryScenarios/`
