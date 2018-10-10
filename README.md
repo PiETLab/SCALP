@@ -1,8 +1,38 @@
 # Select-(as per)-Config-and-Launch-Player (SCALP)
 
-## How to setup
+## How to setup for use
 
-1. Get a Raspberry Pi 2 and a fresh Micro SD card (8gb is enough)
+1. Download all image files available in the [Release](https://github.com/PiETLab/SCALPScripts/releases) page
+  * `RASPBERRY-RELEASE-IMAGE.zip` and `RASPBERRY-RELEASE-IMAGE.z01`
+
+
+2. Download an app to unzip spliced zip files
+  * Windows: [7-zip](http://www.7-zip.org/)
+  * MacOSX: [The Unarchiver](https://itunes.apple.com/us/app/the-unarchiver/id425424353?mt=12)
+
+
+3. Unzip `RASPBERRY-RELEASE-IMAGE.zip`
+  * ![Unzip](./READMEImages/unzip.png)
+
+
+4. Write the outputted `raspbian.img` image to an SD card
+  * You will need to use an image writing tool to install the image you have downloaded on your SD card.
+
+  * [Etcher](https://etcher.io/) is a graphical SD card writing tool that works on Mac OS, Linux and Windows, and is the easiest option for most users. Etcher also supports writing images directly from the zip file, without any unzipping required. To write your image with Etcher:
+
+    1. Download [Etcher](https://etcher.io/) and install it.
+    2. Connect an SD card reader with the SD card inside.
+    3. Open Etcher and select from your hard drive the Raspberry Pi `.img` file you wish to write to the SD card.
+    4. Select the SD card you wish to write your image to.
+    5. Review your selections and click 'Flash!' to begin writing data to the SD card.
+    ![Flashing](./READMEImages/flashing.png)
+
+
+5. Plug the SD card to the Raspberry Pi and enjoy!
+
+## How to setup for development
+
+1. Get a Raspberry Pi and a fresh Micro SD card (8gb is enough)
 
 2. Get a copy of [Raspbian](https://www.raspberrypi.org/downloads/)
   * We will use the easy installer for Raspbian which is called `NOOBS`.
@@ -33,7 +63,7 @@
 
   * You can find further instructions for this step at [NOOBS](https://www.raspberrypi.org/documentation/installation/noobs.md) website.
 
-5. Setup your Raspberry Pi 2
+5. Setup your Raspberry Pi
 
   * Insert the micro SD into the board
     * ![connecting_microsd](./READMEImages/connecting_microsd.png)
@@ -50,7 +80,7 @@
     * After that you should select and language preferences and Raspbian will be fully functional
     * ![setup_screen4](./READMEImages/setup_screen4.png)
 
-6. Check Raspberry Pi 2 internet connection and install required packages
+6. Check Raspberry Pi internet connection and install required packages
   * To check your internet connection open the `Terminal` application (left upper corner) and enter the command `ping 8.8.8.8`. You should see the following result:
   * ![checking_internet_connection](./READMEImages/checking_internet_connection.png)  
   * After that, type the following commands in the terminal one at a time:
