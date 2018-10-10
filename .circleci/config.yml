@@ -6,7 +6,7 @@ version: 2
 jobs:
   build-raspbian-image:
     machine:
-      image: circleci/classic:latest
+      image: circleci/classic:latest 
 
     working_directory: ~/
 
