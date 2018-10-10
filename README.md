@@ -57,6 +57,7 @@
     * `sudo apt-get update`
     * `sudo apt-get install wget`
     * `sudo apt-get install unzip`
+    * `sudo apt-get install jq`
     * `sudo apt-get install oracle-java8-jdk`
     * `sudo update-alternatives --config java`
     * `sudo apt-get install at`
@@ -69,7 +70,8 @@
     * Moving files from the `SCALPScripts` folder to `/home/pi`
   * `mv SCALPScripts/enamel.desktop .config/autostart/`
   * `sudo mv SCALPScripts/enamel_usb_autostart.rules /etc/udev/rules.d/`
-  * `wget https://github.com/PiETLab/TreasureBoxBrailleApps/releases/download/Release-2018-10-05-10-13-51/SCALP.zip`
+  * `spruce_type=SCALP`
+  * `wget $(curl -s https://api.github.com/repos/PiETLab/TreasureBoxBrailleApps/releases/latest | jq -r ".assets[] | select(.name | test(\"${spruce_type}\")) | .browser_download_url")`
     * Check the [releases page](https://github.com/PiETLab/TreasureBoxBrailleApps/releases/latest) for the latest release available
   * `unzip SCALP.zip && rm -rf SCALP.zip`
   * `cd Enamel`
