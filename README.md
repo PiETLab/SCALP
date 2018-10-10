@@ -1,8 +1,8 @@
-# Select-(as per)-Config-and-Launch-Player (SCALP)
+# Treasure Box Braille Raspberry Pi Setup
 
 ## How to setup for use
 
-1. Download all image files available in the [Release](https://github.com/PiETLab/SCALPScripts/releases) page
+1. Download all image files available in the [Release](https://github.com/PiETLab/TreasureBoxBrailleAppsSetup/releases) page
   * `RASPBERRY-RELEASE-IMAGE.zip` and `RASPBERRY-RELEASE-IMAGE.z01`
 
 
@@ -96,11 +96,11 @@
 
 7. Setup `SCALP` files
   * `cd /home/pi`
-  * `git clone https://github.com/PiETLab/SCALPScripts`
-  * `mv SCALPScripts/SCALP.sh SCALPScripts/startSCALP.sh SCALPScripts/unmountDrive.sh SCALPScripts/changeconfig.sh SCALPScripts/config.txt .`
-    * Moving files from the `SCALPScripts` folder to `/home/pi`
-  * `mv SCALPScripts/enamel.desktop .config/autostart/`
-  * `sudo mv SCALPScripts/enamel_usb_autostart.rules /etc/udev/rules.d/`
+  * `git clone https://github.com/PiETLab/TreasureBoxBrailleAppsSetup`
+  * `mv TreasureBoxBrailleAppsSetup/SCALP.sh TreasureBoxBrailleAppsSetup/startSCALP.sh TreasureBoxBrailleAppsSetup/unmountDrive.sh TreasureBoxBrailleAppsSetup/changeconfig.sh TreasureBoxBrailleAppsSetup/config.txt .`
+    * Moving files from the `TreasureBoxBrailleAppsSetup` folder to `/home/pi`
+  * `mv TreasureBoxBrailleAppsSetup/enamel.desktop .config/autostart/`
+  * `sudo mv TreasureBoxBrailleAppsSetup/enamel_usb_autostart.rules /etc/udev/rules.d/`
   * `spruce_type=SCALP`
   * `wget $(curl -s https://api.github.com/repos/PiETLab/TreasureBoxBrailleApps/releases/latest | jq -r ".assets[] | select(.name | test(\"${spruce_type}\")) | .browser_download_url")`
     * Check the [releases page](https://github.com/PiETLab/TreasureBoxBrailleApps/releases/latest) for the latest release available
