@@ -113,7 +113,7 @@
 ## How to setup the hardware
 
 * Check the tutorial video bellow:
-[![TBB Setup Video](http://img.youtube.com/vi/9HIHyWcLGRs/0.jpg)](http://www.youtube.com/watch?v=9HIHyWcLGRs)
+* [![TBB Setup Video](http://img.youtube.com/vi/9HIHyWcLGRs/0.jpg)](http://www.youtube.com/watch?v=9HIHyWcLGRs)
 
 ## Documentation - SCALP Program Functions
 
