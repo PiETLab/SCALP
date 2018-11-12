@@ -30,7 +30,7 @@
 
 5. Plug the SD card to the Raspberry Pi and enjoy!
 
-## How to setup for development
+## How to setup a unit for development
 
 1. Get a Raspberry Pi and a fresh Micro SD card (8gb is enough)
 
@@ -109,6 +109,11 @@
   * `java -Dpi4j.linking=dynamic -jar Enamel.jar START_FACTORY FactoryScenarios/`
     * The `-Dpi4j.linking=dynamic` flag is necessary because the pi4j version in use is deprecated
       * Read more about it [here](https://www.raspberrypi.org/forums/viewtopic.php?t=182191)
+
+## How to setup the hardware
+
+* Check the tutorial video bellow:
+[![TBB Setup Video](http://img.youtube.com/vi/9HIHyWcLGRs/0.jpg)](http://www.youtube.com/watch?v=9HIHyWcLGRs)
 
 ## Documentation - SCALP Program Functions
 
