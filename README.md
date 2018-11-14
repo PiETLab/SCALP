@@ -85,8 +85,6 @@
   * ![checking_internet_connection](./READMEImages/checking_internet_connection.png)  
   * After that, type the following commands in the terminal one at a time:
     * `sudo apt-get update`
-    * `sudo add-apt-repository universe`
-    * `sudo apt-get update`
     * `sudo apt-get install wget`
     * `sudo apt-get install unzip`
     * `sudo apt-get install jq`
@@ -100,6 +98,7 @@
   * `git clone https://github.com/PiETLab/TreasureBoxBrailleSetup`
   * `mv TreasureBoxBrailleSetup/SCALP.sh TreasureBoxBrailleSetup/startSCALP.sh TreasureBoxBrailleSetup/unmountDrive.sh TreasureBoxBrailleSetup/changeconfig.sh TreasureBoxBrailleSetup/config.txt .`
     * Moving files from the `TreasureBoxBrailleSetup` folder to `/home/pi`
+  * `mkdir .config/autostart/`
   * `mv TreasureBoxBrailleSetup/enamel.desktop .config/autostart/`
   * `sudo mv TreasureBoxBrailleSetup/enamel_usb_autostart.rules /etc/udev/rules.d/`
   * `spruce_type=SCALP`
