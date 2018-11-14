@@ -84,7 +84,7 @@
   * To check your internet connection open the `Terminal` application (left upper corner) and enter the command `ping 8.8.8.8`. You should see the following result:
   * ![checking_internet_connection](./READMEImages/checking_internet_connection.png)  
   * After that, type the following commands in the terminal one at a time:
-    * `sudo apt-get upgrade && apt-get update`
+    * `sudo apt-get update`
     * `sudo add-apt-repository universe`
     * `sudo apt-get update`
     * `sudo apt-get install wget`
