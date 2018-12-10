@@ -1,0 +1,23 @@
+{
+  "name": "treasureboxbraillesetup",
+  "version": "1.0.0",
+  "description": "## How to setup for use",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PiETLab/TreasureBoxBrailleSetup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PiETLab/TreasureBoxBrailleSetup/issues"
+  },
+  "homepage": "https://github.com/PiETLab/TreasureBoxBrailleSetup#readme",
+  "dependencies": {
+    "drivelist": "^6.4.3",
+    "usb-detection": "^4.1.0"
+  }
+}
